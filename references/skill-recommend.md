@@ -1,0 +1,35 @@
+# skill-recommend — 설치 스킬 동적 스캔 & 추천
+
+> 원칙: **하드코딩 금지.** 추천 직전 항상 현재 설치된 스킬을 새로 읽는다. 도구가 늘수록 펭귄이 똑똑해진다.
+
+## 1. 스캔 (매번)
+
+1. 대화에 제공된 **available skills 목록**(시스템 컨텍스트)을 우선 사용.
+2. 필요하면 `.claude/skills/` 디렉터리와 플러그인 스킬을 직접 확인.
+3. 사용자가 *안 깐* 스킬은 추천하되 "이건 설치가 필요해요"라고 표시.
+
+## 2. 업무 → 스킬 매핑 (가이드, 고정 아님)
+
+| 업무 신호 | 추천 후보 (설치돼 있으면) | 한 줄 사용법 |
+|-----------|--------------------------|--------------|
+| 디자인/UI/자료 미관 | frontend-design, ui-ux-pro-max, taste-skill | "이 3개를 같이 쓰면 AI 티 안 나는 고퀄 산출물. 먼저 frontend-design으로 톤 잡고, ui-ux-pro-max로 팔레트·폰트, taste-skill로 마감." |
+| 보고서/문서화 | md-to-pdf, hwpxskill, content-worker | "초안은 content-worker, 배포본은 md-to-pdf로 A4 PDF." |
+| 엑셀/데이터 정리 | excel-to-csv, csv-clean | "xlsx → CSV 변환 후 정리, 그 다음 분석." |
+| 매출/판매 분석·예측 | sales-analysis, product-forecast | "예측 vs 실적은 product-forecast, 트렌드·수요는 sales-analysis." |
+| 기획/PRD/전략 | pm-skills, dashboard-prd, webapp-prd, thinking-partner | "전략 프레임워크는 pm-skills, 화면 기획은 dashboard-prd." |
+| 자료조사/리서치 | research-worker, web-crawler-ocr | "다중 소스 검증은 research-worker, URL 분석은 web-crawler-ocr." |
+| 영상/녹취 | watch, transcript-organizer | "영상 분석은 watch, 긴 녹음 정리는 transcript-organizer." |
+| 지식 정리/연결 | graphify, wiki-ingest | "폴더를 지식그래프로는 graphify, 위키 축적은 wiki-ingest." |
+| 노션/외부 저장 | notion-handler, youtube-to-notion | — |
+| 반복작업 분해·병렬 | decompose, execute, integrate | "큰 일은 decompose로 쪼개 execute로 병렬 실행." |
+
+## 3. 추천 방식
+
+- **묶어서** 추천 (단품 나열 X): "디자인이면 이 3개 조합이 좋아요."
+- 각 추천에 **왜 + 어떻게 + 기대 효과** 한 줄씩.
+- 사용자가 안 깐 도구면 설치 한 줄도 곁들임(부담 안 주게).
+- 모르는 새 업무 유형이면 가장 가까운 카테고리로 유추 후 제안.
+
+## 4. 자가 진화
+
+추천이 잘 먹힌 조합은 스코어보드 "After(+도구)" 칸에 남는다. 다음에 비슷한 업무가 오면 그 기록을 근거로 더 정확히 추천한다.
