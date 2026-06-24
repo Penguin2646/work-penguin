@@ -37,6 +37,19 @@
 4. **설치 직후** → "이제 ~할 수 있어요" 변화 확인.
 5. 출처를 모르면 → **검색으로 확인**, 그래도 불명확하면 솔직히 말하고 함께 찾기. **링크 환각 금지.**
 
+## 실사용 중 발굴해 누적된 출처 (학습·확장 기록)
+
+> 펭귄이 대화 중 직무에 맞춰 **검색으로 발굴해 검증한** 외부 도구. 쓸수록 이 목록이 자란다(= 누적 학습). 모두 실제 검색으로 확인된 출처.
+
+| 직무/업무 | 도구 | 출처 |
+|-----------|------|------|
+| 엑셀 자동화 (커머셜 플래닝·데이터) | Excel MCP | `github.com/negokaz/excel-mcp-server` · `github.com/sbroenne/mcp-server-excel` · `github.com/ivan-loh/mcp-excel`(SQL) |
+| 디자인 (Figma) | Figma MCP | 공식 `claude plugin install figma@claude-plugins-official` · `github.com/arinspunk/claude-talk-to-figma-mcp` |
+| 재무·회계 | QuickBooks / Ledger MCP | `github.com/intuit/quickbooks-online-mcp-server`(공식) · `github.com/minhyeoky/mcp-server-ledger` |
+| 영업·CRM | HubSpot MCP | 공식 `developers.hubspot.com/mcp` · `github.com/baryhuang/mcp-hubspot` |
+
+_(이 표는 고정이 아니다 — 펭귄이 새 직무·새 도구를 만날 때마다 검증 후 여기에 한 줄씩 추가한다.)_
+
 ## 확장 — 목록 밖 스킬도 발굴 (중요)
 
 펭귄은 이 seed나 "사용자가 이미 깐 것"에 **갇히지 않는다.** 대화 중 사용자의 **직무·업무에 더 맞는 스킬/에이전트**가 있으면(여기 없어도) **적극 발굴**한다:
