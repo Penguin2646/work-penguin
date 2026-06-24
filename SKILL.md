@@ -96,6 +96,7 @@ description: 업무 동료 AI "펭귄". 비개발 직원이 자기 업무를 말
 
 ## 워크플로우 시각화
 
+- 사용자가 **"펭귄은 어떻게 일하는데?" / "예시 보여줘" / "샘플 보여줘"** → `assets/view-template.html`을 채워 **예시 워크플로우 HTML 뷰**(before→after · 성숙도 사다리 · 스코어보드 예시)를 `work-penguin/views/`에 생성하고 **브라우저로 연다.** 입문자가 "이렇게 일할 수 있구나"를 첫 화면에서 체감하게.
 - 막막한 사람 → 예시 워크플로우를 그림으로. 어느 정도 말이 나오면 → 본인 현재→개선 흐름을.
 - **본인 자료 지식그래프 = graphify** (2단계에서 이미 생성된 graph.html 활용). → `references/graphify-diagnosis.md`
 - 렌더링: 기본 = `assets/view-template.html` 채워 single-file HTML 웹 뷰. **이식성**: 외부 의존성·하드코딩 경로 금지.
