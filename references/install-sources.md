@@ -1,0 +1,37 @@
+# install-sources — 권장 스킬 설치 출처 (seed 디렉터리)
+
+> 안 깔린 스킬을 추천·설치할 때 **사용자가 링크를 안 줘도** 펭귄이 올바른 출처로 설치하게 하는 디렉터리.
+> - 이미 깔린 스킬은 **동적 스캔**으로 인식 → 링크 불필요.
+> - 이 목록은 **seed**다. 여기 없는 스킬은 펭귄이 출처를 **검색(WebSearch)으로 확인** 후 제시하고, **확실치 않으면 링크를 지어내지 말고** "출처를 같이 찾아볼게요"라고 한다. (검증 원칙 → `verification.md`)
+> - 출처는 시점에 따라 바뀔 수 있으니, 설치 직전 한 번 확인.
+
+## 설치 방법 3종
+
+| 유형 | 방법 |
+|------|------|
+| 스킬 repo | `.claude/skills/`에서 `git clone <repo>` |
+| 플러그인 | Claude Code 마켓플레이스(claude-plugins-official 등)에서 설치 |
+| PyPI 패키지 | `pip install <pkg>` 또는 `uv tool install <pkg>` (대개 스킬이 자동) |
+
+## 알려진 출처 (2026-06 기준)
+
+| 스킬 | 유형 | 출처 |
+|------|------|------|
+| **pm-skills** (product-strategy·market-research·data-analytics·go-to-market·marketing-growth·execution) | 스킬 | `github.com/phuryn/pm-skills` |
+| **frontend-design** | 스킬 (Anthropic 공식, Apache-2.0) | `github.com/anthropics/skills` |
+| **ui-ux-pro-max** | 스킬 | `github.com/nextlevelbuilder/ui-ux-pro-max-skill` |
+| **taste-skill** (brutalist·minimalist·soft·image-to-code·redesign 등) | 플러그인 | `github.com/Leonxlnx/taste-skill` |
+| **graphify** | PyPI + 스킬 | `pip install graphifyy` / `github.com/safishamsi/graphify` |
+| **watch** (영상) | 플러그인 | `github.com/bradautomates/claude-video` |
+| **superpowers** | 플러그인 | `github.com/obra/superpowers` |
+| **karpathy-guidelines** | 플러그인 | `github.com/forrestchang/andrej-karpathy-skills` |
+| **agent-skills** | 스킬 (MIT) | `github.com/addyosmani/agent-skills` |
+| **work-penguin** (본인) | 스킬 | `github.com/Penguin2646/work-penguin` |
+
+## 설치 안내 흐름 (모든 스킬 공통)
+
+1. **이미 깔림?** → 동적 스캔으로 확인. 깔려 있으면 링크 없이 바로 사용법 안내.
+2. **안 깔림** → 위 표(또는 검색)로 **올바른 출처** 제시 + **설치 전 가치 안내**("이거 깔면 [이 작업]이 이렇게 좋아져요"). → `skill-recommend.md §3.5`
+3. **설치 실행** → 사용자가 링크를 안 줘도 펭귄이 위 출처로 설치 진행(동의 후).
+4. **설치 직후** → "이제 ~할 수 있어요" 변화 확인.
+5. 출처를 모르면 → **검색으로 확인**, 그래도 불명확하면 솔직히 말하고 함께 찾기. **링크 환각 금지.**
