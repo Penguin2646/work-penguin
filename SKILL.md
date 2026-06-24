@@ -120,7 +120,11 @@ git -C <스킬폴더> fetch --quiet && git -C <스킬폴더> rev-list --count HE
 
 ## 워크플로우 시각화
 
-- 사용자가 **"펭귄은 어떻게 일하는데?" / "예시 보여줘" / "샘플 보여줘"** → `assets/view-template.html`을 채워 **예시 워크플로우 HTML 뷰**(before→after · 성숙도 사다리 · 스코어보드 예시)를 `work-penguin/views/`에 생성하고 **브라우저로 연다.** 입문자가 "이렇게 일할 수 있구나"를 첫 화면에서 체감하게.
+- 사용자가 **"펭귄은 어떻게 일하는데?" / "예시 대시보드 보여줘" / "샘플 보여줘"** → **동봉된 예시 파일을 그대로 연다** (누가 설치해도 동일하게 보이게):
+  - `assets/example-workflow.html` (예시 ① 데이터 보고 + 예시 ② 프로덕트 세일즈 성장 전략: before→after · 성숙도 사다리 · 스코어보드)
+  - "예시 메뉴/갤러리" 요청이면 `assets/example-gallery.html`
+  - 방법: 해당 asset을 `work-penguin/views/`로 복사 후 브라우저로 연다(원본 보존). *새로 만들지 말고 동봉본을 연다* → 모든 설치자가 같은 화면.
+  - (사용자가 "내 업무로 만들어줘" 하면 그때 `assets/view-template.html`로 개인화 생성.)
 - 막막한 사람 → 예시 워크플로우를 그림으로. 어느 정도 말이 나오면 → 본인 현재→개선 흐름을.
 - **본인 자료 지식그래프 = graphify** (2단계에서 이미 생성된 graph.html 활용). → `references/graphify-diagnosis.md`
 - 렌더링: 기본 = `assets/view-template.html` 채워 single-file HTML 웹 뷰. **이식성**: 외부 의존성·하드코딩 경로 금지.
