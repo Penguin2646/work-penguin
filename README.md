@@ -31,6 +31,10 @@ git clone https://github.com/Penguin2646/work-penguin.git
 또는 Claude Code 채팅창에 이렇게 부탁해도 됩니다:
 > "이 깃허브 스킬 설치해줘: https://github.com/Penguin2646/work-penguin"
 
+## 함께 쓰는 도구 — graphify (컴패니언)
+
+펭귄은 진단할 때, 대화가 **실제 업무 폴더**로 향하면 [graphify](https://github.com/safishamsi/graphify)를 꺼내 그 폴더를 지식그래프로 만들어 "지금 상태"를 그림으로 보여줍니다. 미리 안 깔아도 돼요 — **필요해지는 순간 펭귄이 자동 감지해서 설치를 안내**합니다 (PyPI `graphifyy`, 처음 한 번만). graphify가 없어도 펭귄은 대화 인터뷰만으로 진단을 진행합니다(우아한 폴백).
+
 ## 사용
 
 채팅창에 **펭귄**을 부르세요:

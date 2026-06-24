@@ -12,11 +12,12 @@
 
 | 업무 신호 | 추천 후보 (설치돼 있으면) | 한 줄 사용법 |
 |-----------|--------------------------|--------------|
-| 디자인/UI/자료 미관 | frontend-design, ui-ux-pro-max, taste-skill | "이 3개를 같이 쓰면 AI 티 안 나는 고퀄 산출물. 먼저 frontend-design으로 톤 잡고, ui-ux-pro-max로 팔레트·폰트, taste-skill로 마감." |
+| 디자인/UI/자료 미관 (InDesign·Figma 포함) | frontend-design, ui-ux-pro-max, taste-skill(image-to-code) | "이 3개를 같이 쓰면 AI 티 안 나는 고퀄. frontend-design으로 톤→ui-ux-pro-max로 팔레트·폰트→taste-skill로 마감. **레퍼런스(이미지/링크)를 주면 image-to-code/taste-skill로 그 톤을 재현** — 레퍼런스 제공이 퀄리티의 핵심. Figma/InDesign 작업도 '이런 느낌' 레퍼런스를 코드/시안으로 빠르게 뽑아 출발점으로." |
 | 보고서/문서화 | md-to-pdf, hwpxskill, content-worker | "초안은 content-worker, 배포본은 md-to-pdf로 A4 PDF." |
 | 엑셀/데이터 정리 | excel-to-csv, csv-clean | "xlsx → CSV 변환 후 정리, 그 다음 분석." |
 | 매출/판매 분석·예측 | sales-analysis, product-forecast | "예측 vs 실적은 product-forecast, 트렌드·수요는 sales-analysis." |
 | 기획/PRD/전략 | pm-skills, dashboard-prd, webapp-prd, thinking-partner | "전략 프레임워크는 pm-skills, 화면 기획은 dashboard-prd." |
+| 마케팅/그로스 | pm-skills(market-research·go-to-market·marketing-growth), research-worker, web-crawler-ocr, watch | "감으로 하던 마케팅을 **데이터 기반 리서치 루프**로. 시장·경쟁은 pm-skills market-research, 경쟁사 페이지는 web-crawler-ocr, 영상 트렌드는 watch, 깊은 조사는 research-worker로 3소스 교차검증. GTM·그로스 루프 설계까지." |
 | 자료조사/리서치 | research-worker, web-crawler-ocr | "다중 소스 검증은 research-worker, URL 분석은 web-crawler-ocr." |
 | 영상/녹취 | watch, transcript-organizer | "영상 분석은 watch, 긴 녹음 정리는 transcript-organizer." |
 | 지식 정리/연결 | graphify, wiki-ingest | "폴더를 지식그래프로는 graphify, 위키 축적은 wiki-ingest." |
