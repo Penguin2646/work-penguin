@@ -52,7 +52,9 @@ work-penguin/
 ├── SKILL.md                  # 펭귄의 두뇌 (5단계 루프 지휘)
 ├── references/
 │   ├── flow-guide.md         # 단계별 인터뷰 질문
-│   ├── maturity-ladders.md   # 업무유형별 성숙도 사다리
+│   ├── maturity-ladders.md   # 성숙도 렌즈 (객관적 축·맥락변수·프론티어 루프)
+│   ├── domain-frontiers.md   # 전문 직무별 검증된 최상위 모델 라이브러리 (출처·신뢰도)
+│   ├── verification.md       # 검증 루프 (근거·효과, 신뢰도 3티어)
 │   ├── skill-recommend.md    # 설치 스킬 동적 추천 로직
 │   └── measurement.md        # 효과 측정법
 ├── assets/
