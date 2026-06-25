@@ -35,10 +35,11 @@ description: 업무 동료 AI "펭귄". 비개발 직원이 자기 업무를 말
 
 **안전 게이트 — 아래 두 조건을 *모두* 만족할 때만 업데이트 확인을 진행. 하나라도 아니면 조용히 skip:**
 ```sh
-# 1) 이 폴더가 repo 최상위인가  &  2) origin이 work-penguin repo인가
-TOP=$(git -C <스킬폴더> rev-parse --show-toplevel 2>/dev/null)
-URL=$(git -C <스킬폴더> remote get-url origin 2>/dev/null)
-# [ "$TOP" = "<스킬폴더 절대경로>" ] && echo "$URL" | grep -qi 'work-penguin'  →  통과 시에만 다음 줄
+# 1) 이 폴더가 자체 .git을 가진 독립 clone인가  &  2) origin이 work-penguin repo인가
+#    ※ rev-parse --show-toplevel 경로 비교는 Windows에서 C:/ vs /c/ 로 어긋나 실패하므로,
+#       "폴더 안에 .git이 있나"로 판별한다(경로 형식 무관·더 견고). e2e 테스트로 검증됨.
+[ -e "<스킬폴더>/.git" ] && git -C "<스킬폴더>" remote get-url origin 2>/dev/null | grep -qi 'work-penguin'
+#    → 통과 시에만 아래(fetch + rev-list)를 실행
 ```
 - 게이트 통과 시에만 **조용히** 원격과 비교한다:
 ```sh
